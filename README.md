@@ -21,5 +21,29 @@ Escriba en la terminal de linux:  python3 brutegeorge.py
 Es necesario tener el archivo .cap en el mismo directorio que BruteGeorge
 
 5. Modo optimización.
-Con la opción 9 del Menú podemos optimizar Kali Linux para que vaya más rápido. Mucho ojo, mirar el código antes de ejecutar porque para algunas opciones necesitas ser root.
+Con la opción 9 del Menú podemos optimizar Kali Linux para que vaya más rápido. Mucho ojo, mirar el código antes de ejecutar porque para algunas opciones necesitas ser root. Añade al fichero /etc/sysctl.conf unas mejoras para el rendimiento e instala el software preload, deberá reiniciar depués.
 
+
+
+
+ENGLISH INSTRUCTIONS.
+
+1. WHAT DOES BRUTEGEORGE DO?
+BruteGeorge is a software developed in Python3 on Kali Linux (I don't know if it will work on Windows or Ubuntu, you can try it) that having a .cap file with the handshake obtained with aircrack helps us to get the password if we know that it has 8 numeric characters.
+
+Even today there are modems / routers that have this password system. If we edit the code we can modify it at will to place fewer or more characters provided they are numeric.
+
+2. How does BruteGeorge work?
+What it does is by means of a MENU it gives us to choose between option 23 in BruteGeorge mode that will start from the number 00000000 to 99999999 something that depends on the equipment we have, it will take more or less. On the other hand, we can choose between several options if we want to scan a certain range.
+
+3. What requirements or dependencies do I need?
+It is not necessary to have more than Kali Linux because we need Aircrack-ng for the scan and Crunch to generate the dictionaries. As I said before the .cap file is obtained from Aircrack-ng (see any tutorial to learn how to remove it) and Crunch does not generate the dictionary.
+
+One of the great things about BruteGeorge is that Crunch generates a dictionary file called dictionary.txt that is 95 MB in size and is refreshed, so you don't need a huge amount of hard disk space.
+
+4. How do I run it?
+Type in linux terminal: python3 brutegeorge.py
+You need to have the .cap file in the same directory as BruteGeorge
+
+5. Optimization mode.
+With option 9 of the Menu we can optimize Kali Linux so that it goes faster. Be careful, look at the code before executing because for some options you need to be root. Add some performance improvements to the /etc/sysctl.conf file and install the preload software, you will have to reboot later.
